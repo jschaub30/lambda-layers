@@ -1,5 +1,7 @@
 # Lambda layer for poppler utilities
 
+Version 22.08.0 of Poppler
+
 Create the docker image
 ```bash
 docker build -t amazonlinux-poppler .
@@ -10,7 +12,7 @@ Run the container:
 docker run -it amazonlinux-poppler  # the "SRC" container (see script)
 ```
 
-See the [`create_layer.sh`][create_layer.sh] script for more details.
+See the [`create_layer.sh`](create_layer.sh) script for more details.
 
 The resulting lambda layer is [layer/poppler-layer.zip](layer/poppler-layer.zip).
 
