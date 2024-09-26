@@ -1,0 +1,2 @@
+libtesseract.so.5
+liblept.so.5
