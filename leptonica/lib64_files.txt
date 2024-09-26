@@ -1,0 +1,9 @@
+libc.so.6
+libpng16.so.16
+libtiff.so.5
+libm.so.6
+libz.so.1
+libwebp.so.7
+libzstd.so.1
+libjbig.so.2.1
+libjpeg.so.62
