@@ -10,6 +10,7 @@ rm -rf layer
 mkdir -p layer/lib64
 mkdir -p layer/lib
 mkdir -p layer/bin
+mkdir -p layer/tessdata
 
 SRC=8346f42936e0  # docker container
 
@@ -40,7 +41,11 @@ while IFS= read -r filename; do
 	docker cp "$SRC:$linked_file" layer/lib/
 done <lib_files.txt
 
+# Download english data
+wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata \
+    -P layer/tessdata
+
 cd layer || exit
-zip -r9 tesseract-layer.zip bin lib64 lib/liblept*
+zip -r9 tesseract-layer.zip bin lib64 lib/liblept* tessdata/* test/*
 zip -r9 tesseract-lib-layer.zip lib/libt*
 echo "Created Lambda layer layer/tesseract-layer.zip"
