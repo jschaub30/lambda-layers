@@ -7,7 +7,7 @@ The combined layer was 60MB, so I split these layers into 2 files:
 - [layer/tesseract-layer.zip](layer/tesseract-layer.zip) tesseract binary and most library files
 - [layer/tesseract-lib-layer.zip](layer/tesseract-lib-layer.zip) libtesseract files
 
-Details:
+### Details
 - tesseract v5.4.1
   - leptonica-1.82.0
   - libpng 1.6.37
