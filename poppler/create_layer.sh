@@ -3,7 +3,7 @@
 
 set -ex
 
-# rm -rf layer
+rm -rf layer
 mkdir -p layer/lib64
 mkdir -p layer/bin
 

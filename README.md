@@ -1,6 +1,8 @@
 # AWS Lambda layers
 
-All of these have the ARM64 architecture, but I included scripts that you can
+All of these use the ARM64 architecture, but I included scripts that you can
 use to create layers for other platforms (x86_64).
 
-- [poppler](poppler/)
+- [Poppler utilities, an open source PDF rendering library](poppler/)
+- [Tesseract, an open source OCR engine](tesseract/)
+- [Leptonica, open source library broadly useful for image processing analysis](leptonica/)

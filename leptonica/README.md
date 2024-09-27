@@ -1,21 +1,21 @@
 # Lambda layer for leptonica
 
-v1.82
+[Leptonica](http://www.leptonica.org/) is a open source library containing software that
+is broadly useful for image processing and image analysis applications.
 
 The lambda layer is [layer/leptonica-layer.zip](layer/leptonica-layer.zip).
+- v1.8.2
+- arm64 architecture
 
-To build for yourself, follow these steps.
-
-## Create the docker image
+## Build it yourself
+Create the docker image
 ```bash
 docker build -t amazonlinux-leptonica .
 ```
 
-## Run the container:
+Run the container:
 ```bash
 docker run -it amazonlinux-leptonica  # the "SRC" container (see script)
 ```
 
 Edit and run the [`create_layer.sh`](create_layer.sh) script.
-
-I used a Macbook with an M1 chip, so use the `arm64` architecture in the Lambda function.
