@@ -7,6 +7,9 @@ The combined layer was 60MB, so I split these layers into 2 files:
 - [layer/tesseract-layer.zip](layer/tesseract-layer.zip) tesseract binary and most library files
 - [layer/tesseract-lib-layer.zip](layer/tesseract-lib-layer.zip) libtesseract files
 
+Use the [lambda_test_function.py](lambda_test_function.py) to test.  It should complete in around
+13 seconds with the default Lambda memory settings.
+
 ### Details
 - tesseract v5.4.1
   - leptonica-1.82.0
