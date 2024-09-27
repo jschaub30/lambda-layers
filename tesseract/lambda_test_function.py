@@ -7,7 +7,7 @@ LIB_DIR = os.path.join(SCRIPT_DIR, 'lib')
 
 def lambda_handler(event, context):
     cmds = [
-            "LD_LIBRARY_PATH=/opt/lib64:/opt/lib /opt/bin/tesseract",
+            "LD_LIBRARY_PATH=/opt/lib64:/opt/lib /opt/bin/tesseract --help",
             ]
     
     for cmd in cmds:
