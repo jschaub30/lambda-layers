@@ -3,9 +3,7 @@
 [Tesseract](https://github.com/tesseract-ocr/tesseract) is an open source optical
 character recognition (OCR) engine.
 
-The combined layer was 60MB, so I split these layers into 2 files:
-- [layer/tesseract-layer.zip](layer/tesseract-layer.zip) tesseract binary and most library files
-- [layer/tesseract-lib-layer.zip](layer/tesseract-lib-layer.zip) libtesseract files
+The layer can be found at [layers/tesseract-layer-x86_64.zip](layers/tesseract-layer-x86_64.zip).
 
 Use the [lambda_test_function.py](lambda_test_function.py) to test.  It should complete in around
 13 seconds with the default Lambda memory settings.
@@ -19,14 +17,8 @@ Use the [lambda_test_function.py](lambda_test_function.py) to test.  It should c
 - arm64 architecture
 
 ## Build it yourself
-Create the docker image
-```bash
-docker build -t amazonlinux-tesseract.
-```
+Create an EC2 instance using the amazonlinux:2023 AMI.
 
-Run the container:
-```bash
-docker run -it amazonlinux-tesseract  # the "SRC" container (see script)
-```
+Copy and run the [`install_tesseract.sh`](install_tesseract.sh) script.
 
-Edit and run the [`create_layers.sh`](create_layers.sh) script.
+Run the [`create_layers.sh`](create_layers.sh) script.
