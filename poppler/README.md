@@ -2,18 +2,12 @@
 
 [Poppler](https://poppler.freedesktop.org/) is an open source PDF rendering library.
 
-The lambda layer is [layer/poppler-layer.zip](layer/poppler-layer.zip).
+The lambda layer is [layers/poppler-layer-x86_64.zip](layers/poppler-layer-x86_64.zip).
 - Version 22.08.0 of Poppler
-- `arm64` architecture
 
  # Build it yourself
-Create the docker image
-```bash
-docker build -t amazonlinux-poppler .
-```
+Create an EC2 instance from an Amazon Linux AMI
 
-```bash
-docker run -it amazonlinux-poppler  # the "SRC" container (see script)
-```
+Run the [`install_poppler.sh`](install_poppler.sh) script.
 
-Edit and run the [`create_layer.sh`](create_layer.sh) script.
+Run the [`create_layer.sh`](create_layer.sh) script.
