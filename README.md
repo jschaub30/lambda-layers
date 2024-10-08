@@ -1,6 +1,6 @@
 # AWS Lambda layers
 
-Part of my previous job was to deploy open-source softwar, typically installing
+Part of my previous job was to deploy open-source software, typically installing
 these in docker containers or directly onto the source (Redhat) servers.
 
 The process to deploy these in a serverless fashion on AWS Lambda is similar.
