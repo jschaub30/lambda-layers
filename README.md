@@ -10,3 +10,4 @@ I've included build scripts if you'd like to modify or build these on other plat
 - [Poppler utilities, an open source PDF rendering library](poppler/)
 - [Tesseract, an open source OCR engine](tesseract/)
 - [Leptonica, open source library broadly useful for image processing analysis](leptonica/)
+- [mysqldump utility](mysqldump/)
